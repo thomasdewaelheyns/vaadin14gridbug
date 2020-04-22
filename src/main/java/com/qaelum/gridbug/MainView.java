@@ -3,6 +3,7 @@ package com.qaelum.gridbug;
 import com.qaelum.gridbug.pojo.Detail;
 import com.qaelum.gridbug.pojo.Item;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Hr;
@@ -82,8 +83,10 @@ public class MainView extends FlexLayout {
         HorizontalLayout menu = new HorizontalLayout();
         menu.setSizeUndefined();
         Button button = new Button(new Icon(VaadinIcon.INFO_CIRCLE_O));
+        button.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         button.setSizeUndefined();
         Button button2 = new Button(new Icon(VaadinIcon.PLUS_CIRCLE_O));
+        button2.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         button2.setSizeUndefined();
         menu.add(button);
         menu.setFlexGrow(0,button);
